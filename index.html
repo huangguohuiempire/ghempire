@@ -29,7 +29,7 @@
             min-height: 100vh;
         }
 
-        /* Canvas nền không gian */
+        /* Space background canvas */
         #space-bg {
             position: fixed;
             top: 0;
@@ -39,7 +39,7 @@
             z-index: -1;
         }
 
-        /* Container chính */
+        /* Main Container */
         .container {
             max-width: 1200px;
             margin: 0 auto;
@@ -68,7 +68,7 @@
             gap: 15px;
         }
 
-        /* Ảnh đại diện Thầy Sáng Lập */
+        /* Founder Avatar */
         .founder-avatar {
             width: 55px;
             height: 55px;
@@ -272,15 +272,15 @@
 </head>
 <body>
 
-    <!-- Canvas Vũ Trụ Nhấp Nháy -->
+    <!-- Space Background Canvas -->
     <canvas id="space-bg"></canvas>
 
     <div class="container">
         <!-- Header -->
         <header>
             <div class="brand">
-                <!-- Ảnh Thầy Sáng Lập -->
-                <img src="https://i83.servimg.com/u/f83/20/63/21/42/10000110.jpg" alt="Thầy Sáng Lập Portrait" class="founder-avatar">
+                <!-- Founder Portrait -->
+                <img src="https://i83.servimg.com/u/f83/20/63/21/42/10000110.jpg" alt="Founder Portrait" class="founder-avatar">
                 <div class="brand-text">
                     <h1>Radiant Empire of Guohui</h1>
                     <p>Sovereign Digital & Orbital Domain</p>
@@ -306,14 +306,14 @@
 
         <!-- Dynamic Grid -->
         <div class="grid-3">
-            <!-- Sovereign Info -->
+            <!-- Governance & Founder Info -->
             <div class="hud-card">
                 <i class="fa-solid fa-user-gear card-icon"></i>
                 <h3>Sovereignty</h3>
                 <ul>
-                    <li><i class="fa-solid fa-angle-right"></i> <strong>Thầy Sáng Lập:</strong> Liz Quiehui / Lý Thu Tuệ (Guohui I)</li>
-                    <li><i class="fa-solid fa-angle-right"></i> <strong>Trụ sở:</strong> Thailand</li>
-                    <li><i class="fa-solid fa-angle-right"></i> <strong>Quản trị:</strong> Autonomous Leadership</li>
+                    <li><i class="fa-solid fa-angle-right"></i> <strong>Founder:</strong> Liz Quiehui / Ly Thu Tue</li>
+                    <li><i class="fa-solid fa-angle-right"></i> <strong>Base:</strong> Thailand</li>
+                    <li><i class="fa-solid fa-angle-right"></i> <strong>Governance:</strong> Autonomous Leadership</li>
                 </ul>
             </div>
 
@@ -347,7 +347,7 @@
             <p>&copy; 2026 Radiant Empire of Guohui. All Sovereign Rights Reserved.</p>
             <p style="margin-top: 5px; color: var(--cyan-glow);">Official Repository hosted on GitHub Pages</p>
             
-            <!-- Mã đếm lượt truy cập (Flag Counter) -->
+            <!-- Flag Counter -->
             <div class="counter-box">
                 <a href="https://info.flagcounter.com/zycL" target="_blank">
                     <img src="https://s01.flagcounter.com/count2/zycL/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_10/viewers_0/labels_0/pageviews_0/flags_0/percent_0/" alt="Flag Counter" border="0">
@@ -356,9 +356,9 @@
         </footer>
     </div>
 
-    <!-- Script Hiệu Ứng -->
+    <!-- Animation Script -->
     <script>
-        // Hiệu ứng Canvas Không Gian Vũ Trụ
+        // Space Canvas Effect
         const canvas = document.getElementById('space-bg');
         const ctx = canvas.getContext('2d');
 
@@ -395,7 +395,7 @@
         }
         drawStars();
 
-        // Hiệu ứng chữ gõ tự động
+        // Typing Effect
         const textToType = "Establishing a new era of digital civilization, scientific self-determination, and space exploration. Governed under progressive natural rights and high-technological innovation.";
         let index = 0;
         const typingContainer = document.getElementById('typing-box');
